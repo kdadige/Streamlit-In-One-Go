@@ -3,13 +3,13 @@ import pandas as pd
 st.subheader("Loading the CSV File")
 
 df = st.file_uploader("Upload the CSV File: ", type = ['csv', 'xlsx'])
-df = pd.read_csv('/Users/keerthidadige/PycharmProjects/Streamlit/Products.csv')
+df = pd.read_csv('Products.csv')
 
 if df is not None:
     st.table(df.head())
 
 st.subheader('Dealing with Images')
-st.image('/Users/keerthidadige/PycharmProjects/Streamlit/img.png')
+st.image('img.png')
 
 st.subheader('Dealing with Images while uploading')
 img_file = st.file_uploader("Upload the Image file : ", type = ['png', 'jpeg'])
